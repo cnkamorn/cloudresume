@@ -1,0 +1,48 @@
+body {
+    background-color: rgba(17, 16, 16, 0.873);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin:0px;
+    padding:0px;
+}
+.main {
+    margin: auto;
+    width: 90%;
+    border:none;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    max-width: 800px;
+  }
+  .shadow {
+    position:relative;
+  }
+ h4,p {
+    margin:0px;
+ }
+  .shadow:after {
+    filter: blur(60px);
+  }
+  .shadow:before,
+  .shadow:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: linear-gradient(to right, #cad2d1 0%, #000000 100%);    width: calc(100% + 0px);
+    height: calc(100% + 0px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+  }
+  .date {
+    line-height: 15px;
+  }
+  .header {
+    display:flex;
+    padding:25px 20px;
+    justify-content: space-between;
+    border-bottom:2px solid rgb(0, 0, 0);
+  }
+
+
+  .content {
+    padding:0px 20px;
+  }
